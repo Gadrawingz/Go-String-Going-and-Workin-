@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -19,4 +22,10 @@ func main() {
 	myString := string(theLuneSlice)
 	fmt.Println(myString) // Señor
 
+	// 3. How to create a string from slice?
+	words := []string{"NBA", "YoungBoy", "Rapper"}
+
+	// Join each element of the slice
+	newString := strings.Join(words, " ")
+	fmt.Println(newString) // NBA YoungBoy Rapper
 }

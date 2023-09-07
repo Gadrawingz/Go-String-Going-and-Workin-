@@ -9,8 +9,12 @@ func main() {
 	fmt.Println(developerName)
 	fmt.Println()
 
+	// 1.B We can also represent a String using a backtick
+	newString := `I need to work at Google`
+	fmt.Println(newString)
+
 	// 2. Accessing individual bytes of a string
-	firstName := "Iradufasha"
+	firstName := "IRADUFASHA"
 
 	// %s is the format specifier to print a string.
 	// len(s) returns the number of bytes in the string.
@@ -22,8 +26,12 @@ func main() {
 	printStringCharacters(firstName)
 
 	// 3. Accessing individual characters of a string:
-
 	name := "Hello World"
+	// This firstName[0] returns the 1st character of the string: I
+	fmt.Printf("\n%c \n", firstName[0])
+	// This firstName[4] returns the 4th character of the string: U
+	fmt.Printf("%c \n", firstName[4])
+
 	fmt.Printf("String: %s\n", name)
 	printStringCharacters(name)
 	fmt.Printf("\n")
