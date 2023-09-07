@@ -23,6 +23,18 @@ func main() {
 
 	// 3. Accessing individual characters of a string:
 
+	name := "Hello World"
+	fmt.Printf("String: %s\n", name)
+	printStringCharacters(name)
+	fmt.Printf("\n")
+	printStringBytes(name)
+	fmt.Printf("\n\n")
+	name = "Señor"
+	fmt.Printf("String: %s\n", name)
+	printStringCharacters(name)
+	fmt.Printf("\n")
+	printStringBytes(name)
+
 }
 
 // Gadefined function
